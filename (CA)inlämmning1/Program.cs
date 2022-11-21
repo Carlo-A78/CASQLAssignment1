@@ -56,10 +56,7 @@ namespace _CA_inlämmning1
                             {
                                 Console.WriteLine("\nAlla username och password är inte unika");
                             }
-                           // Console.WriteLine("\nDet finns: " + dt.Rows.Count + " " + "unika lösenord");
-                           // Console.WriteLine("Det finns: " + dt2.Rows.Count + " " + "unika användarnamn\n");
-
-
+                          
                         }
                         break;
                     case ConsoleKey.D3:
