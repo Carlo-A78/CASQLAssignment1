@@ -48,8 +48,16 @@ namespace _CA_inlämmning1
                             var dt2 = new DataTable();  
                             adt.Fill(dt);
                             adt2.Fill(dt2);
-                            Console.WriteLine("\nDet finns: " + dt.Rows.Count + " " + "unika lösenord");
-                            Console.WriteLine("Det finns: " + dt2.Rows.Count + " " + "unika användarnamn\n");
+                            if (dt.Rows.Count == dt2.Rows.Count)
+                            {
+                                Console.WriteLine("\nAlla username och password är unika");
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nAlla username och password är inte unika");
+                            }
+                           // Console.WriteLine("\nDet finns: " + dt.Rows.Count + " " + "unika lösenord");
+                           // Console.WriteLine("Det finns: " + dt2.Rows.Count + " " + "unika användarnamn\n");
 
 
                         }
